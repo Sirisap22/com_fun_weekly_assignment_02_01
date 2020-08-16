@@ -13,13 +13,11 @@ bool isPalindrome(int* array, int n)
 {
 	for (int i = 0; i < n; i++)
 	{
-		//std::cout << array[i] << " == " << array[n - 1 - i] << std::endl;
 		if (!(array[i] == array[n - 1 - i]))
 		{
 			return false;
 		}
 	}
-
 	return true;
 }
 
@@ -53,10 +51,7 @@ int* number_to_array(int value)
 
 int main()
 {
-	// max palindrome
 	int max_palindrome = 0;
-	// loop i 100-1000
-	
 	for (int i = 100; i < 1000; i++)
 	{
 		for (int j = 100; j < 1000; j++)
@@ -66,13 +61,10 @@ int main()
 			int* array_product = number_to_array(product);
 			if (isPalindrome(array_product, n) && product > max_palindrome)
 			{
-				//std::cout << product;
-				//std::cout << i << " j =" << j << std::endl;
 				max_palindrome = product;
 			}
 		}
 	}
-
 	std::cout << max_palindrome;
 	return 0;
 }
