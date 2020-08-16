@@ -1,6 +1,5 @@
 ﻿#include <iostream>
 #include <cmath>
-#define ulli unsigned long long int
 
 /*
 	Project Euler Problem 04
