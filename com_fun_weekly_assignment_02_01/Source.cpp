@@ -18,6 +18,7 @@ bool isPalindrome(int* array, int n)
 			return false;
 		}
 	}
+
 	return true;
 }
 
@@ -28,8 +29,8 @@ int find_digit(int value)
 		digit++;
 		value /= 10;
 	} while (value >= 1);
-	return digit;
 
+	return digit;
 }
 
 int number_at_i_digit(int number, int i)
@@ -66,6 +67,7 @@ int main()
 		}
 	}
 	std::cout << max_palindrome;
+
 	return 0;
 }
 
